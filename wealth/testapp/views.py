@@ -23,3 +23,6 @@ def sms_otp(request):
 def employee_count(request):
     city_count=Employee.objects.values('city').annotate(city_count=Count('city')).order_by('city')
     return render(request,'employee.html',{'city':city_count})
+
+def admin_register(request):
+    pass
