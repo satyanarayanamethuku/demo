@@ -25,4 +25,5 @@ def employee_count(request):
     return render(request,'employee.html',{'city':city_count})
 
 def admin_register(request):
+    print("admin login sucess")
     pass
